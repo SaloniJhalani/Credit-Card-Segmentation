@@ -13,16 +13,18 @@
 - [Future Improvements](#future-improvements)
 
 ## Project Overview
-This project aims to develop a machine learning model to predict bank customer churn. Customer churn, also known as customer attrition, refers to the phenomenon where customers stop doing business with a company or switch to a competitor. By identifying potential churners in advance, banks can take proactive measures to retain valuable customers and minimize revenue loss. This repository provides a comprehensive solution for predicting customer churn using various machine learning algorithms.
+In this project, customer segmentation was conducted for credit card customers. The primary objective of this analysis was to divide the customer base into distinct segments based on specific characteristics. 
+
+This segmentation enables businesses to gain valuable insights about their customers, which can be utilized to develop targeted marketing strategies and enhance overall business performance. 
 
 ## Data Source
-The dataset used for this project can be obtained from [here](https://www.kaggle.com/datasets/adammaus/predicting-churn-for-bank-customers).
+The dataset used for this project can be obtained from [here](https://www.kaggle.com/datasets/arjunbhasin2013/ccdata).
 
 The dataset summarizes the usage behavior of about 9000 active credit card holders for 6 months. 
 
 ## Website Link
 
-A web-based demonstration of this project can be accessed [here](https://bank-customer-churn-prediction.streamlit.app).
+A web-based demonstration of this project can be accessed [here]().
 
 ## Implementation Details
 
@@ -44,16 +46,15 @@ A web-based demonstration of this project can be accessed [here](https://bank-cu
 ## Steps Followed
 
 1. **Data collection**: Obtained the customer credit card dataset from Source Dataset Link.
-2. **Data Preprocessing**: Cleansed the data, handled skweness in the data and performed the dimenstioalty reduction.
-4. **Model Development**: Traied the model using KMeans with different number of clusters. 
-5. **Model Evaluation**: Find the best number of cluster is 4 using elbown technique. 
-6. **Deployment**: The Credit Card Segmentation model is deployed as a standalone application. This enables users to interact with the model and visualize the data based on the identified clusters. The deployed app provides an intuitive interface with features such as column distribution analysis, scatter plots showcasing relationships between variables, and dropdown fields for selecting specific values.
+2. **Data Preprocessing**: Cleansed the data, addressed skewness, and performed dimensionality reduction.
+4. **Model Development**: Traied the model using KMeans. Multiple iterations are conducted using different numbers of clusters to explore various segmentation possibilities.
+5. **Model Evaluation**: To determine the optimal number of clusters, an evaluation technique such as the elbow method is employed. 
+6. **Deployment**: The Credit Card Segmentation model is deployed as a standalone application. This enables users to interact with the model and visualize the data based on the identified clusters. The deployed app provides an intuitive interface with features such as column distribution analysis, scatter plots showcasing relationships between variables.
 
 ## Results and Evaluation Criterion
 
-Based on the evaluation results, the best-performing model was **XGBoost** which achieved an accuracy of 91% and F1-score of 91%. 
 
-<img width="436" alt="Screenshot 2023-06-27 at 4 15 32 PM" src="https://github.com/SaloniJhalani/Bank-Customer-Churn-Prediction/assets/33859675/4d273530-aa25-443c-93d6-33d6d3904de4">
+
 
 ## Future Improvements
 
